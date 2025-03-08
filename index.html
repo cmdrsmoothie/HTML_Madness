@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+	body {
+	
+	background-color: black;
+	
+	}
+	
+	.borderbody {
+		height: 300px;
+		width: 450px;
+		border: dashed white 1px;
+		background-color: teal;
+		margin: 0px;
+	}
+	
+	.fleft {
+		height: 300px;
+		width: 450px;
+		background-color: blue;
+	}
+	
+	.fmiddle {
+		height: 100%;
+		width: calc(100% / 3);
+		background-color: white;
+		position: relative;
+		left: calc(100% / 3);	
+	}
+	
+	.fright {
+		height: 100%;
+		width: 100%;
+		background-color: red;
+		position: absolute;
+		left: 100%;
+	}
+  </style>
+  
+</head>
+<body>
+
+<div class="borderbody">
+	<div class="fleft">
+		<div class="fmiddle">
+			<div class="fright">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- xtra test stuff for fun 
+<div class="borderbody" style="background-color: orange;" >
+-->
+</div>
+
+
+</body>
+</html>
