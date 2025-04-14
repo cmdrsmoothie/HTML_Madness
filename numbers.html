@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(165, 165, 165);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>A stupid test page for number swaps and UTM Attribution</h1>
+
+    <hr />
+
+    <ul>
+        <li><p>Here is a number that is the SWAP TARGET using span tags: 404-<span style="color: red;">543</span>-1296</p></li>
+        <li><p>Here is the same number but swapped: 404-543-1296</p></li>
+        <li><p>Here is a number that will visually swap but not swap on the back end: 
+            <a href="tel:404%20543 1296">404-543-1296</a></p></li>
+        <li><p>647-557-5172 should show up for utm_source=cr2: 4045431296</p></li>
+    </ul>
+    <hr />
+
+    <ul>
+        <li>Here is a number that should swap for any gmb visit (all utm chars + utm_visit=1): 4045431296</li>
+        <li>Here is a Memphis number that will swap only for a Memphis utm (along with the above number): 4045431297</li>
+        <li>Here is a Nashville number that will swap only for a Nashville utm (along with the above number): 4045431298</li>
+    </ul>
+
+
+    <hr>
+
+    <p>Here is a form:</p>
+
+    <div id="cr-form-FOR30310eea5c704f839352fb71e8b664a7"></div>
+    
+    <script type="text/javascript" src="https://cdn.callrail.com/companies/476069534/3482c32e89d7f364dd13/12/swap.js"></script>     
+</body>
+</html>
